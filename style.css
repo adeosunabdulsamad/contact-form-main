@@ -1,0 +1,157 @@
+body {
+    background-color: hsl(148, 38%, 91%);
+    font-family: "Karla", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+label {
+    font-size: 16px;
+}
+
+#contact-us {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+h1 {
+    margin: 15px 0;
+    text-align:left;
+}
+
+.names {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.name {
+    width: 100%;
+}
+#fname, #lname {
+    width: 91%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: grabbing;
+}
+#email-address {
+    margin-top: 15px;
+}
+#email{
+    width: 95%;
+    border: 0.7px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: grabbing;
+}
+
+#query-radio {
+    margin-top: 15px;
+}
+.query-options{
+    display: flex;
+    gap: 10px;
+}
+.query-options :enabled{
+    background-color: hsl(148, 38%, 91%);
+}
+.query-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+    width: 45%;
+    white-space: nowrap;
+}
+.query-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+#message-label {
+    margin-top: 15px;
+}
+
+#message {
+    width: 95%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+#error-messages, #fname-error-message, #lname-error-message, #checkbox-error, #message-error-message{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: red;
+}
+.button {
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: hsl(169, 82%, 37%);
+}
+input[type="checkbox"] {
+    accent-color: hsl(169, 82%, 27%);
+}
+input[type="radio"] {
+    accent-color: hsl(169, 82%, 27%);
+}
+
+.attribution {
+    position: -ms-page;
+    bottom: 2%;
+}
+
+@media screen and (max-width: 375px) {
+    .button {
+        font-size: 10px;
+        height: 40px;
+    }
+    .names {
+        display: block;
+    }
+    #contact-us {
+        width: 86%;
+    }
+    .form-container{
+        width: 86%;
+    }
+    .query-options{
+        display: block;
+    }
+    #message {
+        width: 95%;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        height: 150px;
+        resize: none;
+    }
+}
+    
