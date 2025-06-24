@@ -77,11 +77,15 @@ h1 {
     gap: 10px;
     width: 45%;
     white-space: nowrap;
+    background-color: white;
 }
 .query-label {
     display: inline-block;
     margin-right: 10px;
 }
+.query-container:has(input[type="radio"]:checked) {
+    background-color: hsl(148, 38%, 91%); /* Light green background */
+  }
 #message-label {
     margin-top: 15px;
 }

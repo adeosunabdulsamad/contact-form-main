@@ -36,13 +36,13 @@
       <div id="query-radio">
         <p>Query Type *</p>
         <div class="query-options">
-        <div class="query-container">
-        <input type="radio" class="general" name="query" value="general" required>
-        <label class="query-label" for="general">General Enquiry</label>
+        <div class="query-container" for="general">
+          <input type="radio" id="general" name="query" value="general">
+          <label class="query-label" for="general">General Enquiry</label>
         </div>
-        <div class="query-container">
-        <input type="radio" class="general" name="query" value="support" required>
-        <label class="query-label" for="support">Support Request</label>
+        <div class="query-container" for="support">
+          <input type="radio" id="support" name="query" value="support">
+          <label class="query-label" for="support">Support Request</label>
         </div>
         </div>
         <div id="query-error-message"></div>
